@@ -2,7 +2,7 @@
 
 Черновик главного экрана сайта для врача-косметолога Сюзанны Сафарян (Екатеринбург · Омск · онлайн).
 
-**Сайт:** https://sofyushka0905-crypto.github.io/cosmetologist-suzanna-safaryan/
+**Сайт:** https://cosmetologist-site.github.io/suzanna-safaryan/
 
 | Компьютер | Телефон |
 |---|---|
@@ -16,4 +16,4 @@
 
 Шрифты Prata и Manrope (Google Fonts). Вёрстка адаптивная, работает от 360 px.
 
-Автор: София
+
