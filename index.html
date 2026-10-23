@@ -62,11 +62,11 @@ a:focus-visible { outline: 2px solid var(--gold); outline-offset: 4px; border-ra
   overflow: hidden; pointer-events: none;
 }
 .photo img {
-  position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 58% 6%;
+  position: absolute; inset: 96px 0 0 0; width: 100%; height: calc(100% - 96px); object-fit: cover; object-position: 58% 6%;
   filter: saturate(.92) contrast(1.04);
-  -webkit-mask-image: linear-gradient(90deg, transparent 0%, rgba(0,0,0,.35) 22%, #000 52%), linear-gradient(0deg, transparent 0%, #000 22%);
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, rgba(0,0,0,.35) 22%, #000 52%), linear-gradient(0deg, transparent 0%, #000 22%), linear-gradient(180deg, transparent 0%, #000 14%);
   -webkit-mask-composite: source-in;
-          mask-image: linear-gradient(90deg, transparent 0%, rgba(0,0,0,.35) 22%, #000 52%), linear-gradient(0deg, transparent 0%, #000 22%);
+          mask-image: linear-gradient(90deg, transparent 0%, rgba(0,0,0,.35) 22%, #000 52%), linear-gradient(0deg, transparent 0%, #000 22%), linear-gradient(180deg, transparent 0%, #000 14%);
           mask-composite: intersect;
 }
 .photo::after { /* green wash ties the grey studio backdrop to the page */
@@ -148,8 +148,8 @@ h1 .line2 { display: block; color: var(--glow); }
 
 @media (max-width: 980px) {
   .nav { display: none; }
-  .photo { position: relative; width: 100%; height: 520px; margin-top: -92px; }
-  .photo img {
+  .photo { position: relative; width: 100%; height: 520px; margin-top: 0; }
+  .photo img { inset: 0; height: 100%;
     object-position: 60% 4%; transform: scale(1.22); transform-origin: 72% 0%;
     -webkit-mask-image: linear-gradient(0deg, transparent 0%, #000 40%), linear-gradient(90deg, transparent 0%, #000 30%); -webkit-mask-composite: source-in;
             mask-image: linear-gradient(0deg, transparent 0%, #000 40%), linear-gradient(90deg, transparent 0%, #000 30%); mask-composite: intersect;
